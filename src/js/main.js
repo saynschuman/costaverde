@@ -1,11 +1,7 @@
-(function($) {
-    
-	// $('.header').slick({
-	//   	cssEase: 'linear',
-	//   	autoplay: true,
-	//   	dots: true,
-	//   	prevArrow: '<div class="prev"></div>',
-	// 	nextArrow: '<div class="next"></div>'
-	// })
+$(function() {
+	
+	$('#fullpage').fullpage({
+		anchors:['index', 'ourFood', 'about', 'catering', 'contact']
+	});
 
-})(jQuery);
+});

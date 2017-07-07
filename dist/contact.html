@@ -5,39 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:title" content="Costa Verde - Contact Us" />
-    <meta property="og:image" content="http://www.costaverde.ca/img/logo_big.png"/>
-    <meta property="og:image" content="http://www.costaverde.ca/img/background_contact.jpg"/>
     <link rel="icon" type="image/gif" href="img/favicon.gif" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <!--[if lt IE 9]> 
      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
-    <![endif]-->
-    <title>Сostaverde</title>
-</head>
+     <![endif]-->
+     <title>Сostaverde</title>
+ </head>
 
-<body>
-    <!-- header -->
+ <body>
 
-    <!-- <div id="loader_wrapper"><div><img src="img/loader_2.gif" alt="loader"/><span>loading</span></div></div>     -->
-    <div id="content_block">
-    
-        <header>
-    <nav>
-        <div class="logo_wrapper">
-            <a href="index.html" class="linck_check" data-val="0"><img src="img/logo.png" alt="logo"/></a>
-        </div>
-        <div class="left_menu_wrapper">
-            <a href="our_food.html" class="linck_check" data-val="1">our food</a>
-            <a href="about.html" class="linck_check" data-val="2">about</a>
-        </div>
-        <div class="right_menu_wrapper">
-            <a href="catering.html" class="linck_check" data-val="3">catering</a>
-            <a href="contact.html" class="linck_check" data-val="4">contact</a>
-        </div>
-    </nav>
+    <header>
+        <nav id="menu">
+            <div class="logo_wrapper">
+                <a data-menuanchor="index" href="#index" class="linck_check"><img src="img/logo.png" alt="logo"/></a>
+            </div>
+            <div class="left_menu_wrapper">
+                <a data-menuanchor="ourFood" href="#ourFood" class="linck_check">our food</a>
+                <a data-menuanchor="about" href="#about" class="linck_check">about</a>
+            </div>
+            <div class="right_menu_wrapper">
+                <a data-menuanchor="catering" href="#catering" class="linck_check">catering</a>
+                <a data-menuanchor="contact" href="#contact" class="linck_check">contact</a>
+            </div>
+        </nav>    
 </header>
 
 
@@ -128,33 +121,7 @@
 
 <footer>
 
-    <div id="footer_block">
-
-        <ul class="footer_left_ul">
-
-        	<li><a href="privacy_policy.html" class="linck_check" data-val="5">POLICY</a></li>
-
-            <li><a onClick="javascript: $('nav a').eq(4).click();">LOCATION</a></li>
-
-        </ul>
-
-        <ul class="social_icons">
-
-        	<li><a id="facebook" onClick="OpenShareWindow('f', 620, 520);"><img src="img/follow_f.png" alt=""/></a></li>
-
-            <li><a id="twitter" onClick="OpenShareWindow('t', 620, 520);"><img src="img/follow_t.png" alt=""/></a></li>
-
-            <li><a id="pinterest" onClick="OpenShareWindow('p', 620, 520);"><img src="img/follow_p.png" alt=""/></a></li>
-
-        </ul>
-
-
-
-
-
-        <p class="copyright">Copyright 2017 Costa Verde | </p>
-
-    </div>
+ 
 
 </footer>
 
@@ -166,19 +133,11 @@
 
 </body>
 
-<script src="libs/js/jquery.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en"></script>
-
-<script src="libs/js/site.js"></script>
-
-<script src="libs/js/jquery.easing.js"></script>
-
-<script src="libs/js/jquery.wheel.js"></script>
-
-<script src="libs/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script type="text/javascript" src="libs/js/jquery.fullPage.min.js"></script>
 
 <script src="js/main.js"></script>
 
