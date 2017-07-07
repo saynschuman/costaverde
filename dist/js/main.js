@@ -100,7 +100,16 @@ $(function() {
 			opacity: 0
 		});
 		$('#insert-text').css('opacity', '0');
-		 
-
 	});
+
+	$('#open_menu').click(function(e){
+		e.preventDefault();
+		$('#menu-outer').addClass('show-menu');
+	})
+
+	$('#close_menu').click(function(e){
+		e.preventDefault();
+		$('#menu-outer').removeClass('show-menu');
+
+	})
 });

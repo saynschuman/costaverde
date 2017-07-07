@@ -3613,3 +3613,53 @@ header nav .right_menu_wrapper a {
   opacity: 0;
   -webkit-transition: .3s;
   transition: .3s; }
+
+#menu-outer {
+  height: 100%;
+  background-color: #000;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 99;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.show-menu {
+  left: 0 !important; }
+
+#menu-full-screen {
+  height: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  background: #000;
+  color: #fff;
+  z-index: 9999;
+  position: absolute;
+  left: 0; }
+  #menu-full-screen h1 {
+    text-align: center;
+    margin-top: 0; }
+  #menu-full-screen #menu_inside_wrapper {
+    width: 50%;
+    display: block;
+    margin: auto; }
+    #menu-full-screen #menu_inside_wrapper #left_part {
+      width: 50%;
+      float: left; }
+      #menu-full-screen #menu_inside_wrapper #left_part ul {
+        margin: 0;
+        padding: 0; }
+      #menu-full-screen #menu_inside_wrapper #left_part li {
+        padding: 0;
+        margin: 0;
+        list-style: none; }
+        #menu-full-screen #menu_inside_wrapper #left_part li a {
+          text-decoration: none;
+          color: #fff; }
+    #menu-full-screen #menu_inside_wrapper #right_part {
+      width: 50%;
+      float: right; }

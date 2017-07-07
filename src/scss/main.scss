@@ -1171,3 +1171,60 @@ header nav .right_menu_wrapper a {
     opacity: 0;
     transition: .3s;
 }
+
+#menu-outer {
+    height: 100%;
+    background-color: #000;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 99;
+    transition: 1s;
+}
+
+.show-menu {
+    left: 0 !important;   
+}
+
+#menu-full-screen {
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    background: #000;
+    color: #fff;
+    z-index: 9999;
+    position: absolute;
+    left: 0;   
+    h1 {
+        text-align: center;
+        margin-top: 0;
+    }
+    #menu_inside_wrapper {
+        width: 50%;
+        display: block;
+        margin: auto;
+        #left_part {
+            width: 50%;
+            float: left;
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+        #right_part {
+            width: 50%;
+            float: right
+        }
+    }
+}
