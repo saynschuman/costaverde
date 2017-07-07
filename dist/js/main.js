@@ -25,6 +25,10 @@ $(function() {
 	$('#right_arrow').click(function(e){
 		e.preventDefault();
 	})
+		
+		$('#left_door').delay(1000).animate({'right':'100%'}, 1500, 'easeInOutCubic');
+		$('#right_door').delay(1000).animate({'left':'100%'}, 1500, 'easeInOutCubic');
+		$('#logo_big').delay(1000).fadeOut(1500, function(){$('.intro_animation').css({'display':'none'});});
 });
 
 
