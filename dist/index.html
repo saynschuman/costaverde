@@ -52,22 +52,21 @@
 		</div>
 		<div class="section" id="section1">
 
-			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="10000">
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
 			  <div class="carousel-inner" role="listbox">
-			    <div class="item active">
+			    <div class="item" data-text="Grilled Chicken (Whole) slide-1">
 			     <img src="img/background_home.jpg" alt="">
 			    </div>
-			    <div class="item">
+			    <div class="item active" data-text="Grilled Chicken (Whole) slide-2">
 			      <img src="img/background_home.jpg" alt="">
 			    </div>
-			    <div class="item">
+			    <div class="item" data-text="Grilled Chicken (Whole) slide-3">
 			      <img src="img/background_home.jpg" alt="">
 			    </div>
 			  </div>
-			  
 			</div>
 
-			<div class="round_content_food spoon">
+			<div class="round_content_food spoon" id="spoon">
 				<article>
 					<h1>Our Food</h1>
 					<p><span>Our food is made with natural ingredients, simple recipes and authentic flavours. Let our plentiful menu guide you on a culinary journey - discover traditional seafood favourites, mouth-watering grilled and rotisserie meats, fresh vegetables and richly flavoured desserts. We buy only high quality chickens that are grain fed and hormone and steroid free.</span></p>
@@ -80,18 +79,19 @@
 				<a href="#carouselExampleControls" role="button" data-slide="next" id="right_arrow"><span>&gt;</span></a>
 			</div>
 
-			<div class="food_title_wrapper">
+			<div class="food_title_wrapper" id="spoon_text">
 				<div class="food_title">
 					<img id="title_shadow" src="img/title_shadow.png" alt="" />
-					<div>
+					<div id="food-title-text">
 						<img src="img/figure_left.png" id="left_figure" alt="" />
 						<img src="img/figure_right.png" id="right_figure" alt="" />
 					</div>
 					<table>
-						<tbody><tr><td><p><label><span>Grilled Chicken (Whole)</span></label></p></td></tr></tbody>
+						<tbody><tr><td><p><label><span id="insert-text">Grilled Chicken (Whole) slide-2</span></label></p></td></tr></tbody>
 					</table>
 				</div>
 			</div>
+			<a class="big_button_right horizontal_linck_check" id="open_menu" href="a_la_carte.html" data-direction="to_left"><img src="img/button_type_2.png" alt=""/><span>View Menu</span></a>
 		</div>
 		<div class="section" id="section2" style="background-image: url(img/background_home.jpg);">
 			<div class="round_content_food flames">
@@ -101,18 +101,18 @@
 				</article>
 				<span class="small_title">SEE OUR CATERING OPTIONS</span>
 				<div class="styled_tag">
-					<a data-menuanchor="about" href="#about" ><img src="img/styled_tag.png" alt=""/></a><span></span>
+					<a data-menuanchor="catering" href="#catering" ><img src="img/styled_tag.png" alt=""/></a><span></span>
 				</div>
 			</div>
 
 			<div class="food_title_wrapper">
 				<div class="food_title">
 					<img id="title_shadow" src="img/title_shadow.png" alt="" />
-					<div>
+					<div id="food-title-text-2">
 						<img src="img/figure_left.png" id="left_figure" alt="" />
 						<img src="img/figure_right.png" id="right_figure" alt="" />
 					</div>
-					<table>
+					<table id="did-you-know">
 						<tbody><tr><td><p><label><span><b>Did you know?</b>We only buy high quality chickens that are grain fed, hormone and steroid free.</span></label></p></td></tr></tbody>
 					</table>
 				</div>
@@ -126,16 +126,55 @@
 				</article>
 				<span class="small_title">GET IN TOUCH WITH US</span>
 				<div class="styled_tag">
-					<a data-menuanchor="about" href="#about" ><img src="img/styled_tag.png" alt=""/></a><span></span>
+					<a data-menuanchor="contact" href="#contact" ><img src="img/styled_tag.png" alt=""/></a><span></span>
 				</div>
 			</div>
 		</div>
 		<div class="section" id="section4" style="background-image: url(img/background_home.jpg);">
-			<div class="round_content">
-				<h1>Contact</h1>
-				<div class="h2_wrapper"><div class="span_wrapper"><h2>Come for a taste</h2></div></div>
-				<p>See our food selection</p>
-			</div>
+			<div class="round_content_food flames">
+            <form class="form_out" method="post">
+                <article>
+                    <h1>Inquiries</h1>
+                </article>
+            	<div class="form_in">
+                	<div class="form_slide">
+                    	<span class="form_lines"></span>
+                        <span class="form_lines"></span>
+                    	<div class="form_slide_wrapper">
+                            <p>*Mandatory fields</p>
+                            <input type="text" value="*name" name="name" />
+                            <input type="text" value="*email" name="email" />
+                            <input type="text" value="*phone (xxx-xxx-xxxx)" name="phone" />
+                            <input type="text" value="*number of guests" name="number_guests" />
+                            <label>When is your event?</label>
+                            <input type="text" value="*select date" id="datepicker" name="select_date" />
+                        </div>
+                    </div>
+                    <div class="form_slide">
+                    	<span class="form_lines"></span>
+                        <span class="form_lines"></span>
+                    	<div class="form_slide_wrapper">
+                            <textarea name="text">message</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit_wrapper">
+                	<input id="submit-form" type="submit" value="send">
+                </div>
+            </form>
+            <div class="thank_you_popup">
+            	<h3>Thank You</h3>
+                <p>Your inquiry has been successfully submitted. <br/><br/> We appreciate your interest and will respond shortly.</p>
+            </div>
+            
+            <div class="error_popup">
+            	<h3>Error.</h3>
+                <p></p>
+            </div>
+            
+            <a id="form_left"><span>&lt;</span></a>
+            <a id="form_right"><span>&gt;</span></a>
+        </div>
 		</div>
 	</div>
 </main>

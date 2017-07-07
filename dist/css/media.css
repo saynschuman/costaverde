@@ -1,0 +1,25 @@
+@media screen and (max-height: 638px) {
+  header nav div.logo_wrapper {
+    position: absolute;
+    cursor: pointer;
+    left: 50%;
+    top: -10px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-left: 0;
+    width: 100px;
+    height: 100px; }
+    header nav div.logo_wrapper img {
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin: auto; }
+  header {
+    background-position: 0px 0px; }
+  .left_menu_wrapper {
+    top: -40px; }
+  .right_menu_wrapper {
+    top: -40px; }
+  .food_title_wrapper {
+    bottom: 75px; } }
