@@ -211,9 +211,16 @@
 .small_button_right img {
 	border: none;
 }
+.dishes_wrapper {
+	right: 0;
+	transform: translateY(0);
+}
 .dishes_wrapper div p {
 	font-size: 12px;
-	padding-right: 3px;
+	padding-right: 8px;
+	text-align: right;
+	padding-top: 2px;
+	right: 12px;
 }
 #menu-full-screen #menu_inside_wrapper #left_part {
 	width: 100%;

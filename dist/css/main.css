@@ -3087,8 +3087,8 @@ header nav .right_menu_wrapper a {
   font-size: 20px;
   font-weight: normal;
   width: 100%;
-  text-align: right;
-  padding-top: 10px;
+  text-align: left;
+  padding-top: 0;
   float: left;
   position: relative;
   width: 100%; }
@@ -3737,7 +3737,11 @@ header nav .right_menu_wrapper a {
   padding-top: 12px;
   top: 0;
   left: auto;
-  right: 0; }
+  right: 0;
+  right: 50%;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%); }
   .dishes_wrapper.active {
     display: block; }
 
