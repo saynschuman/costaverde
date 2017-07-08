@@ -14,31 +14,33 @@
 		</div>
 		<div class="section" id="section1">
 
-			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="4000">
 				<div class="carousel-inner" role="listbox">
 					<div class="item" data-text="Grilled Chicken (Whole) slide-1">
-						<img src="img/background_home.jpg" alt="">
+						<div class="slide-image" style="background-image: url(img/background_home.jpg);"><div class="inner"></div></div>
 					</div>
 					<div class="item active" data-text="Grilled Chicken (Whole) slide-2">
-						<img src="img/background_home.jpg" alt="">
+						<div class="slide-image" style="background-image: url(img/background_home.jpg);"><div class="inner"></div></div>
 					</div>
 					<div class="item" data-text="Grilled Chicken (Whole) slide-3">
-						<img src="img/background_home.jpg" alt="">
+						<div class="slide-image" style="background-image: url(img/background_home.jpg);"><div class="inner"></div></div>
 					</div>
 				</div>
 			</div>
 
 			<div class="round_content_food spoon" id="spoon">
-				<article>
-					<h1>Our Food</h1>
-					<p><span>Our food is made with natural ingredients, simple recipes and authentic flavours. Let our plentiful menu guide you on a culinary journey - discover traditional seafood favourites, mouth-watering grilled and rotisserie meats, fresh vegetables and richly flavoured desserts. We buy only high quality chickens that are grain fed and hormone and steroid free.</span></p>
-				</article>
-				<span class="small_title">learn about us</span>
-				<div class="styled_tag">
-					<a data-menuanchor="about" href="#about" ><img src="img/styled_tag.png" alt=""/></a><span></span>
+			<div id="sec_1_art">
+					<article>
+						<h1>Our Food</h1>
+						<p><span>Our food is made with natural ingredients, simple recipes and authentic flavours. Let our plentiful menu guide you on a culinary journey - discover traditional seafood favourites, mouth-watering grilled and rotisserie meats, fresh vegetables and richly flavoured desserts. We buy only high quality chickens that are grain fed and hormone and steroid free.</span></p>
+					</article>
+					<span class="small_title">learn about us</span>
+					<div class="styled_tag">
+						<a data-menuanchor="about" href="#about" ><img src="img/styled_tag.png" alt=""/></a><span></span>
+					</div>
+					<a href="#carouselExampleControls" role="button" data-slide="prev" id="left_arrow"><span>&lt;</span></a>
+					<a href="#carouselExampleControls" role="button" data-slide="next" id="right_arrow"><span>&gt;</span></a>
 				</div>
-				<a href="#carouselExampleControls" role="button" data-slide="prev" id="left_arrow"><span>&lt;</span></a>
-				<a href="#carouselExampleControls" role="button" data-slide="next" id="right_arrow"><span>&gt;</span></a>
 			</div>
 
 			<div class="food_title_wrapper" id="spoon_text">
@@ -57,13 +59,15 @@
 		</div>
 		<div class="section" id="section2" style="background-image: url(img/background_home.jpg);">
 			<div class="round_content_food flames">
-				<article>
-					<h1>About Us</h1>
-					<p><span>About UsWith two locations to serve you better, Churrasqueira Costa Verde brings rich, eclectic tastes closer to home. For over 25 years we have been stimulating the senses with grilled and rotisserie chicken, complemented by fresh, natural ingredients - eat in, take out or have us cater your next event.</span></p>
-				</article>
-				<span class="small_title">SEE OUR CATERING OPTIONS</span>
-				<div class="styled_tag">
-					<a data-menuanchor="catering" href="#catering" ><img src="img/styled_tag.png" alt=""/></a><span></span>
+				<div id="sec_2_art">
+					<article>
+						<h1>About Us</h1>
+						<p><span>About UsWith two locations to serve you better, Churrasqueira Costa Verde brings rich, eclectic tastes closer to home. For over 25 years we have been stimulating the senses with grilled and rotisserie chicken, complemented by fresh, natural ingredients - eat in, take out or have us cater your next event.</span></p>
+					</article>
+					<span class="small_title">SEE OUR CATERING OPTIONS</span>
+					<div class="styled_tag">
+						<a data-menuanchor="catering" href="#catering" ><img src="img/styled_tag.png" alt=""/></a><span></span>
+					</div>
 				</div>
 			</div>
 
@@ -82,14 +86,16 @@
 		</div>
 		<div class="section" id="section3" style="background-image: url(img/background_home.jpg);">
 			<div class="round_content_food flames">
-				<article>
-					<h1>Catering</h1>
-					<p><span>Rely on Churrasqueira Costa Verde to spice up your next event with the freshest ingredients and carefully prepared authentic cuisine. We cater events of all shapes and sizes, from intimate family gatherings to corporate year-end celebrations. No matter the occasion, you'll enjoy the quality of service and food served up by over 25 years of experience.</span></p>
-				</article>
-				<span class="small_title">GET IN TOUCH WITH US</span>
-				<div class="styled_tag">
-					<a data-menuanchor="contact" href="#contact" ><img src="img/styled_tag.png" alt=""/></a><span></span>
-				</div>
+				<div id="sec_3_art">
+					<article>
+						<h1>Catering</h1>
+						<p><span>Rely on Churrasqueira Costa Verde to spice up your next event with the freshest ingredients and carefully prepared authentic cuisine. We cater events of all shapes and sizes, from intimate family gatherings to corporate year-end celebrations. No matter the occasion, you'll enjoy the quality of service and food served up by over 25 years of experience.</span></p>
+					</article>
+					<span class="small_title">GET IN TOUCH WITH US</span>
+					<div class="styled_tag">
+						<a data-menuanchor="contact" href="#contact" ><img src="img/styled_tag.png" alt=""/></a><span></span>
+					</div>
+				</div>	
 			</div>
 		</div>
 		<div class="section" id="section4" style="background-image: url(img/background_home.jpg);">
@@ -138,22 +144,34 @@
 				<a id="form_right"><span>&gt;</span></a>
 			</div>
 
-			<div class="address_left open_google_map" data-lat_val="43.68772" data-lng_val="-79.438941">
-				<h3>Midtown</h3>
-				<p>370 Oakwood Ave.<br/> 
-					Toronto, ON M6E 2W3, <br/>
-					416-658-9577<br/>
-					<b>view map</b></p> 
-				</div>
-				<div class="address_right open_google_map" data-lat_val="43.845051" data-lng_val="-79.558525">
-					<h3>North</h3>
-					<p>3737 Major Mackenzie Dr. W<br/>
-						Woodbridge, ON , L4H 0A2<br/>
-						905-832-2918<br/>
-						<b>view map</b></p>  
+			<div class="adresses_wrapper clearfix">
+				<div class="address_left open_google_map" data-lat_val="43.68772" data-lng_val="-79.438941">
+					<h3>Midtown</h3>
+					<p>370 Oakwood Ave.<br/> 
+						Toronto, ON M6E 2W3, <br/>
+						416-658-9577<br/>
+						<b>view map</b></p> 
 					</div>
+					<div class="address_right open_google_map" data-lat_val="43.845051" data-lng_val="-79.558525">
+						<h3>North</h3>
+						<p>3737 Major Mackenzie Dr. W<br/>
+							Woodbridge, ON , L4H 0A2<br/>
+							905-832-2918<br/>
+							<b>view map</b></p>  
+						</div>
 
+					</div>
 				</div>
+				<div class="section" id="section5" style="background-image: url(img/background_home.jpg);">
+				<div class="round_content_food flames">
+					<div id="sec_4_art">
+						<article>
+							<h1>Policy</h1>
+							<p><span>We collect only as much personal information as is necessary for us to respond to your inquiry in a timely manner and to serve you effectively. Under no circumstances do we provide or sell any of our stored data to a third-party. Upon receiving your entered information we can then assess our ability to satisfy your catering needs within the given timeframe. Prices as subject to change without notice.</span></p>
+						</article>
+					</div>	
+				</div>
+			</div>
 			</div>
 		</main>
 

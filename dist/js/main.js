@@ -1,7 +1,7 @@
 $(function() {
 	
 	$('#fullpage').fullpage({   
-		anchors:['index', 'food', 'about', 'catering', 'contact'], 
+		anchors:['index', 'food', 'about', 'catering', 'contact', 'policy'], 
 	    afterLoad: function (anchorLink, index) {
 	            $('.linck_check').removeClass('active');
 	            if($(window).width() < 768) {
@@ -9,6 +9,7 @@ $(function() {
 	            }
 	            $('a[href="#'+anchorLink+'"]').addClass('active');
 	            if(anchorLink == 'food') {
+	            	$('.slide-image').height($(window).height()).width($(window).width());
 	            	$('.social_icons').addClass('active');
 		            setTimeout(function(){
 					  $('#spoon').css('opacity', 1);

@@ -27,6 +27,21 @@
     top: 40%; } }
 
 @media screen and (max-width: 768px) {
+  #logo_big {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    margin-left: 0;
+    margin-top: 0;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  #right_door {
+    background: #000; }
+  #left_door {
+    background: #000; }
   header nav div.logo_wrapper {
     display: none; }
   header {
@@ -73,7 +88,7 @@
     top: 0px;
     right: auto;
     top: auto !important;
-    margin-top: 21px; }
+    margin-top: 48px; }
   header nav .right_menu_wrapper a {
     margin-left: 0; }
   .mobile-menu {
@@ -106,10 +121,10 @@
     left: 50%;
     width: 300px;
     height: 300px;
-    top: 0;
-    -webkit-transform: translate(-50%, 0%);
-        -ms-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     left: 50%;
     background: none;
     color: #fff;
@@ -201,23 +216,34 @@
     background: rgba(0, 0, 0, 0.5); }
   .address_right, .address_left {
     height: auto;
-    background: none;
-    font-size: 12px; }
-  .address_right {
-    right: 55px;
-    top: 75%;
-    text-align: left; }
+    background: none; }
   .address_left {
-    left: 30px;
-    top: 75%;
-    text-align: right; }
+    left: 42px;
+    top: 0;
+    padding: 0;
+    text-align: left;
+    position: relative;
+    width: 40%;
+    margin-left: 0;
+    float: left; }
+  .address_right {
+    right: 42px;
+    top: 0;
+    text-align: right;
+    position: relative;
+    margin-right: 0;
+    padding-top: 10px;
+    margin-left: 0;
+    width: 40%;
+    float: right;
+    padding: 0; }
   .open_google_map h3 {
     font-size: 12px;
     line-height: 16px;
     text-transform: uppercase;
     font-weight: normal; }
   .open_google_map p {
-    font-size: 10px; }
+    font-size: 8px; }
   .round_content_food {
     position: absolute;
     width: 100%;
@@ -226,7 +252,90 @@
     top: 0;
     margin-left: 0;
     margin-top: 0;
-    color: #fff; } }
+    color: #fff; }
+  .round_content h1 {
+    padding-top: 30px; }
+  #sec_1_art {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    position: relative;
+    display: block;
+    height: 430px; }
+  #sec_2_art {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    position: relative;
+    display: block;
+    height: 430px; }
+  #sec_3_art {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    position: relative;
+    display: block;
+    height: 430px; }
+  #sec_4_art {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    position: relative;
+    display: block;
+    height: 430px; }
+  #right_arrow {
+    right: 0; }
+  #left_arrow {
+    left: 0; }
+  #mobile-link {
+    display: block; }
+  #form_left {
+    background: none;
+    width: 31px;
+    height: 58px;
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    margin-top: -72px;
+    padding: 14px 0px 0px 11px;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-border-radius: 50px 0 0 50px;
+            border-radius: 50px 0 0 50px; }
+  .adresses_wrapper {
+    position: absolute;
+    bottom: auto;
+    top: 375px;
+    left: 0;
+    width: 320px;
+    height: auto;
+    right: 0;
+    margin: auto; }
+  #form_right {
+    background: none;
+    width: 31px;
+    height: 58px;
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    margin-top: -72px;
+    padding: 14px 0px 0px 11px;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-border-radius: 0 50px 50px 0;
+            border-radius: 0 50px 50px 0; }
+  .form_out {
+    float: none;
+    position: relative;
+    width: 232px;
+    height: 388px;
+    overflow: hidden;
+    clear: both;
+    margin-left: 0;
+    display: block;
+    margin: auto; } }
 
 @media screen and (max-width: 400px) {
   .form_out {

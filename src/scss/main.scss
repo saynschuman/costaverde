@@ -1613,3 +1613,24 @@ footer {
 .close-menu {
     display: none;
 }
+
+.section {
+    background-size: cover; 
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: block;
+    max-width: 100%;
+    position: relative; 
+}
+
+#mobile-link {
+    display: none;
+}
