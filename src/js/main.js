@@ -110,6 +110,32 @@ $(function() {
 	$('#close_menu').click(function(e){
 		e.preventDefault();
 		$('#menu-outer').removeClass('show-menu');
+	})
 
+	$('.menu_left_a').click(function(e){
+		e.preventDefault();
+		$('.menu_left_a').removeClass('active');
+		$(this).addClass('active');
+		var menuName = $(this).attr('data-title');
+		$('.table-right').removeClass('active');
+		$('#' + menuName).addClass('active');
+		$('.dishes_wrapper').removeClass('active');
+		$('.dish-d').removeClass('active');
+		$('.dish-p').removeClass('active');		
+	})
+
+	$('.menu_right_a').click(function(e){
+		e.preventDefault();
+		var dishName = $(this).attr('data-dish');
+		$('.dishes_wrapper').addClass('active');
+		$('.dish-d').removeClass('active');
+		$('.dish-p').removeClass('active');
+		$('#' + dishName).addClass('active');
+		$('#' + dishName + ' p').addClass('active');
+	})
+	$('.small_button_right span').click(function(){
+		$('.dishes_wrapper').removeClass('active');
+		$('.dish-d').removeClass('active');
+		$('.dish-p').removeClass('active');
 	})
 });

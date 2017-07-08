@@ -604,6 +604,12 @@ header nav .right_menu_wrapper a {
 
 #right_part_wrapper table {
     display: block;
+    margin-left: 46px;
+    margin-top: 2px;
+    display: none;
+    &.active {
+        display: block;
+    }
 }
 
 #right_part_wrapper table td {
@@ -1192,14 +1198,30 @@ header nav .right_menu_wrapper a {
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-    background: #000;
+    background: transparent;
     color: #fff;
     z-index: 9999;
     position: absolute;
     left: 0;   
     h1 {
-        text-align: center;
-        margin-top: 0;
+    text-align: center;
+    font-family: 'Courgette', Arial, cursive;
+    font-size: 44px;
+    font-weight: normal;
+    z-index: 1;
+    padding-bottom: 36px;
+    margin-top: 0;
+    }
+    #left_part_wrapper {
+        float: right;
+        position: relative;
+        width: 360px;
+        padding-right: 45px;
+        text-align: right;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
     }
     #menu_inside_wrapper {
         width: 50%;
@@ -1216,6 +1238,7 @@ header nav .right_menu_wrapper a {
                 padding: 0;
                 margin: 0;
                 list-style: none;
+                padding: 6px 0px;
                 a {
                     text-decoration: none;
                     color: #fff;
@@ -1226,5 +1249,83 @@ header nav .right_menu_wrapper a {
             width: 50%;
             float: right
         }
+    }
+}
+#left_part_wrapper li a:hover, #left_part_wrapper li a.active {
+    border-top: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+}
+
+#right_part_wrapper table {
+    width: 410px;
+}
+
+#right_part_wrapper table td:nth-child(2) {
+    text-align: right;
+}
+
+#right_part_wrapper table td a:hover {
+    color: #737272;
+}
+
+#right_part_wrapper table td a {
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: All 300ms ease-in;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+#right_part_wrapper table tr {
+    border-bottom: 1px #fff solid;
+    border-top: 1px #fff solid;
+    padding: 0;
+    font-size: 14px;
+    vertical-align: top;
+    display: table;
+}
+
+#menu-ver-line {
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.dishes_wrapper {
+    width: 511px;
+    height: 341px;
+    float: left;
+    position: absolute;
+    display: none;
+    padding-top: 12px;
+    top: 0;
+    left: auto;
+    right: 0;
+    &.active {
+        display: block;
+    }
+}
+
+.dishes_wrapper div {
+    display: block;
+}
+
+.dish-d {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+.dishes_wrapper div p.dish-p {
+    display: none;
+    &.active {
+        display: block;
     }
 }
