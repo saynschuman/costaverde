@@ -3628,14 +3628,15 @@ header nav .right_menu_wrapper a {
   left: 100%;
   z-index: 99;
   -webkit-transition: 1s;
-  transition: 1s; }
+  transition: 1s;
+  display: none; }
 
 .show-menu {
   left: 0 !important; }
 
 #menu-full-screen {
   height: auto;
-  top: 50%;
+  top: 30%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -3985,3 +3986,9 @@ footer {
   right: 15px;
   cursor: pointer;
   z-index: 100; }
+
+.mobile-menu {
+  display: none; }
+
+.close-menu {
+  display: none; }

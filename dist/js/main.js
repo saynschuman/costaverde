@@ -4,6 +4,9 @@ $(function() {
 		anchors:['index', 'food', 'about', 'catering', 'contact'], 
 	    afterLoad: function (anchorLink, index) {
 	            $('.linck_check').removeClass('active');
+	            if($(window).width() < 768) {
+	            	$('header').hide(300);
+	            }
 	            $('a[href="#'+anchorLink+'"]').addClass('active');
 	            if(anchorLink == 'food') {
 	            	$('.social_icons').addClass('active');
@@ -107,12 +110,18 @@ $(function() {
 
 	$('#open_menu').click(function(e){
 		e.preventDefault();
-		$('#menu-outer').addClass('show-menu');
+		$('#menu-outer').css('display', 'block')
+			setTimeout(function(){
+				$('#menu-outer').addClass('show-menu');
+			}, 300);
 	})
 
 	$('#close_menu').click(function(e){
 		e.preventDefault();
 		$('#menu-outer').removeClass('show-menu');
+			setTimeout(function(){
+					$('#menu-outer').css('display', 'none')
+			}, 1500);
 	})
 
 	$('.menu_left_a').click(function(e){
@@ -136,7 +145,7 @@ $(function() {
 		$('#' + dishName).addClass('active');
 		$('#' + dishName + ' p').addClass('active');
 	})
-	$('.small_button_right span').click(function(){
+	$('.small_button_right').click(function(){
 		$('.dishes_wrapper').removeClass('active');
 		$('.dish-d').removeClass('active');
 		$('.dish-p').removeClass('active');
@@ -153,6 +162,17 @@ $(function() {
 	})
 	$('#close_map_2 ').click(function(){
 		$('#map_canvas_wrapper_2').removeClass('active');
+	})
+
+	// mobile menu
+
+	$('.mobile-menu').click(function(e){
+		e.preventDefault();
+		$('header').slideToggle(200);
+	})
+	$('.close-menu').click(function(e){
+		e.preventDefault();
+		$('header').slideToggle(200);
 	})
 
 });
