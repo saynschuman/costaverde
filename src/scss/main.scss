@@ -942,7 +942,7 @@ header nav .right_menu_wrapper a {
 #map_canvas_wrapper {
     position: absolute;
     top: 0px;
-    left: -100%;
+    left: 0;
     width: 100%;
     height: 100%;
     background: #000;
@@ -1328,4 +1328,280 @@ header nav .right_menu_wrapper a {
     &.active {
         display: block;
     }
+}
+
+.address_right,
+.address_left {
+    height: auto;
+}
+
+.open_google_map p {
+    margin: 0;
+}
+
+.open_google_map h3 {
+    margin: 0;
+}
+
+.social_icons {
+    padding: 0;
+    &.active {
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        bottom: -10px;
+        text-align: left;
+        padding-left: 36px;
+    }
+}
+
+/*_footer_*/
+
+#footer_left {
+    position: relative;
+    float: left;
+    padding-left: 40px;
+    color: #fff;
+    font-size: 11px;
+    margin-top: 73px;
+}
+
+#footer_left a {
+    padding-left: 3px;
+    position: relative;
+    top: 2px;
+    left: 3px;
+}
+
+#footer_rite {
+    position: relative;
+    float: right;
+    padding-right: 40px;
+    margin-top: 73px;
+}
+
+#footer_rite a {
+    position: relative;
+    float: left;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 11px;
+    margin-left: 18px;
+}
+
+#footer_rite a:hover {
+    text-decoration: underline;
+}
+
+#footer_rite font {
+    color: #fff;
+    font-size: 11px;
+    padding-left: 8px;
+    position: relative;
+    float: left;
+}
+
+#footer_rite div {
+    position: relative;
+    float: left;
+}
+
+#footer_rite div a {
+    margin-left: 8px;
+}
+
+#footer_rite div a .act {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+
+#footer_rite div a:hover .act {
+    display: block;
+}
+
+.footer_left_ul {
+    float: left;
+    padding-left: 40px;
+}
+
+.footer_left_ul li {
+    float: left;
+    font-size: 11px;
+    color: #fff;
+    padding: 0px 7px;
+}
+
+.footer_left_ul li a {
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: All 300ms ease-in;
+    -moz-transition: All 300ms ease-in;
+    -o-transition: All 300ms ease-in;
+    -ms-transition: All 300ms ease-in;
+}
+
+.footer_left_ul li a:hover {
+    color: #898a88;
+}
+
+.footer_left_ul li a img {
+    width: 10px;
+    height: 10px;
+    -webkit-transition: All 300ms ease-in;
+    -moz-transition: All 300ms ease-in;
+    -o-transition: All 300ms ease-in;
+    -ms-transition: All 300ms ease-in;
+}
+
+.footer_left_ul li a:hover img {
+    transform: scale(2.0);
+    -webkit-transform: scale(2.0);
+    -moz-transform: scale(2.0);
+    -o-transform: scale(2.0);
+    -ms-transform: scale(2.0);
+}
+
+.social_icons {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 17px;
+    text-align: center;
+}
+
+.social_icons li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.social_icons li a {
+    cursor: pointer;
+}
+
+.social_icons li a img {
+    -webkit-transition: All 300ms ease-in;
+    -moz-transition: All 300ms ease-in;
+    -o-transition: All 300ms ease-in;
+    -ms-transition: All 300ms ease-in;
+}
+
+.social_icons li a:hover img {
+    transform: rotate(-20deg) scale(1.2) skew(1deg) translate(0px, -5px);
+    -webkit-transform: rotate(-20deg) scale(1.2) skew(1deg) translate(0px, -5px);
+    -moz-transform: rotate(-20deg) scale(1.2) skew(1deg) translate(0px, -5px);
+    -o-transform: rotate(-20deg) scale(1.2) skew(1deg) translate(0px, -5px);
+    -ms-transform: rotate(-20deg) scale(1.2) skew(1deg) translate(0px, -5px);
+}
+
+.copyright {
+    font-size: 11px;
+    float: right;
+    line-height: 20px;
+    color: #fff;
+    padding-right: 40px;
+}
+
+.copyright a {
+    /*background:url(../img/itw.png) right center no-repeat; padding-right:30px;*/
+    font-style: italic;
+    color: #fff;
+    -webkit-transition: All 300ms ease-in;
+    -moz-transition: All 300ms ease-in;
+    -o-transition: All 300ms ease-in;
+    -ms-transition: All 300ms ease-in;
+}
+
+.copyright a:hover {
+    color: #8fba3e;
+}
+
+.footer_left_ul,
+.copyright {
+    padding-top: 37px;
+    z-index: 1;
+    position: relative;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+#footer_block {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 106px;
+    overflow: hidden;
+    background: url(../img/footer_shadow.png) repeat-x;
+}
+
+.footer_left_ul li {
+    list-style: none;
+    a {
+        text-decoration: none;
+    }
+}
+
+// map 
+#map_canvas_wrapper {
+    left: -100%;
+    transition: .3s;
+    &.active {
+        left: 0;
+    }
+}
+#map_canvas_wrapper_2 {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+#map_canvas_wrapper_2 {
+    left: 100%;
+    transition: .3s;
+    &.active {
+        left: 0;
+    }
+}
+#map-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+    left: 0;
+    top: 0;
+}
+
+#map_2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+    left: 0;
+    top: 0;
+}
+
+
+#close_map_2 {
+    position: absolute;
+    top: 131px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 100;
 }
